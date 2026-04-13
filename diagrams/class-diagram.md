@@ -84,9 +84,13 @@ classDiagram
         +String userId
     }
 
-    Room o-- User : occupants 0..*
-    User o-- Payment : payments 0..*
-    User o-- Complaint : complaints 0..*
+    %% Directed Association
+    User --> Room : assignedTo
+
+    %% Aggregation
+    Room o-- User : occupants 
+    User o-- Payment : payments 
+    User o-- Complaint : complaints 
 ```
 
 | Relationship              | Type                           | Why?                                                                            |
@@ -213,9 +217,9 @@ classDiagram
     ComplaintService --> ComplaintRepository : -complaintRepository
 ```
 
-| Relationship                  | Type                           | Why?                                                                                                                                         |
-| ----------------------------- | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Service ──▶ Repository` | **Directed Association** | Each service stores its repository as a**private field** (`-`). One-way: Service knows Repository, Repository does NOT know Service. |
+| Relationship                  | Type                           | Why?                                                                                                                                           |
+| ----------------------------- | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Service ──▶ Repository` | **Directed Association** | Each service stores its repository as a **private field** (`-`). One-way: Service knows Repository, Repository does NOT know Service. |
 
 ---
 
