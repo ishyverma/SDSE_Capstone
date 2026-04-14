@@ -4,7 +4,7 @@ A full-stack hostel management application built with modern web technologies, s
 
 This project serves as a Capstone for Software Design and Software Engineering, demonstrating clean architecture and scalable codebase structures.
 
-## 🚀 Tech Stack
+## Tech Stack
 
 - **Framework:** [Next.js](https://nextjs.org/) (App Router)
 - **Language:** TypeScript
@@ -12,7 +12,7 @@ This project serves as a Capstone for Software Design and Software Engineering, 
 - **ORM:** [Prisma](https://www.prisma.io/)
 - **Styling:** Tailwind CSS v4
 
-## 🏗 System Architecture & Design Patterns
+## System Architecture & Design Patterns
 
 The codebase is structured to separate concerns, making it highly maintainable, testable, and robust.
 
@@ -39,7 +39,7 @@ The Prisma schema (`prisma/schema.prisma`) defines the following core entities:
 - **Payment:** Records financial transactions linked to specific users.
 - **Complaint:** Manages user-generated issues and their resolution status.
 
-## ⚙️ Getting Started
+## Getting Started
 
 ### Prerequisites
 Make sure you have Node.js and npm (or pnpm/yarn) installed on your system.
@@ -70,7 +70,7 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 SDSE_Capstone/
@@ -87,7 +87,7 @@ SDSE_Capstone/
 └── README.md
 ```
 
-## 🧠 Software Engineering Principles Applied
+## Software Engineering Principles Applied
 
 - **Encapsulation:** Hiding complex creation logic and API implementations.
 - **Abstraction:** Abstracting DB models and payment gateways.
